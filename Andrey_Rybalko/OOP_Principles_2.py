@@ -7,7 +7,7 @@ class BankAccount:
         print("Пополнение успешно! Баланс:", self.__balance)
 
     def try_withdraw(self, amount):
-        if amount < self.__balance:
+        if amount <= self.__balance:
             self.__balance -= amount
             print("Успешно! Остаток баланса:", self.__balance)
         else:
